@@ -24,17 +24,12 @@
                 <p> Creator Name </p>
                 <button class = "likebutton">♥</button>
                 <ul id="playlist-1"></ul>
-                    <div id="festivalModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h1 id="festivalName"></h1>
-                        <img id="festivalImage" src="" alt="Festival Image">
-                        <p id="festivalDates"></p>
-                        <p id="festivalLocation"></p>
-                        <div id="artistLineup"></div>
-                        </div>
-                    </div>
-                </div>
+                <!-- <div class="playlist-modal">
+                    <p>More Info:</p>
+                    <p>Genre: </p>
+                    <p>Tracks: </p>
+                    <p>Duration: </p>
+                </div> -->
             </div>
             <div class="playlist-card">
                 <img class = "playlist-img" src = "assets/img/playlist.png" alt = "Playlist 1 Image">
@@ -97,10 +92,18 @@
             </div> -->
         </div>
     </main>
+    <div id="playlist-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title">Playlist Title</h2>
+            <p id="modal-creator">Creator Name</p>
+            <p id="modal-details">Additional details go here...</p>
+        </div>
+    </div>
 
-    <footer>
-        <!-- Your footer content here -->
-    </footer>
+
+
+
     <script src="data/data.js"></script>
     <script src="script.js"></script>
 </body>
