@@ -1,0 +1,242 @@
+[
+    {
+        "playlistId": "1",
+        "playlist_name": "pnd x drake x brent",
+        "playlist_author": "kenna",
+        "likes": 33,
+        "playlist_art": "assets/img/playlist.png",
+        "song": [
+            {
+                "songId": "1",
+                "song_name": "9",
+                "song_artist": "Drake",
+                "song_duration": "4:15",
+                "song_art": "assets/img/song.png"
+            },
+            {
+                "songId": "2",
+                "song_name": "SOMEBODY LOVES ME",
+                "song_artist": "PARTYNEXTDOOR, Drake",
+                "song_duration": "3:02",
+                "song_art": "assets/img/song.png"
+            },
+            {
+                "songId": "3",
+                "song_name": "No One Knows",
+                "song_artist": "Brent Faiyaz",
+                "song_duration": "4:31",
+                "song_art": "assets/img/song.png"
+            }
+        ]
+    },
+    {
+        "playlistId": "2",
+        "playlist_name": "what i thought i was gonna hear in the club",
+        "playlist_author": "kenneisha",
+        "likes": 9,
+        "playlist_art": "assets/img/playlist.png",
+        "song": [
+            {
+                "songId": "1",
+                "song_name": "Unpredictable",
+                "song_artist": "Jamie Foxx, Ludacris",
+                "song_duration": "3:39",
+                "song_art": "assets/img/song.png"
+            },
+            {
+                "songId": "2",
+                "song_name": "New Flame",
+                "song_artist": "Chris Brown, USHER, Rick Ross",
+                "song_duration": "4:04",
+                "song_art": "assets/img/song.png"
+            },
+            {
+                "songId": "3",
+                "song_name": "Bartender",
+                "song_artist": "T-Pain, Akon",
+                "song_duration": "3:58",
+                "song_art": "assets/img/song.png"
+            }
+        ]
+    },
+    {
+        "playlistId": "3",
+        "playlist_name": "smi",
+        "playlist_author": "kennisius",
+        "likes": 18,
+        "playlist_art": "assets/img/playlist.png",
+        "song": [
+            {
+                "songId": "1",
+                "song_name": "Wild Irish Roses",
+                "song_artist": "Smino",
+                "song_duration": "2:49",
+                "song_art": "assets/img/song.png"
+            },
+            {
+                "songId": "2",
+                "song_name": "Lee & Lovie",
+                "song_artist": "Smino, reggie",
+                "song_duration": "2:51",
+                "song_art": "assets/img/song.png"
+            },
+            {
+                "songId": "3",
+                "song_name": "I Deserve",
+                "song_artist": "Smino, NOS",
+                "song_duration": "2:42",
+                "song_art": "assets/img/song.png"
+            }
+        ]
+    },
+    {
+        "playlistId": "4",
+        "playlist_name": "candle lit",
+        "playlist_author": "kenken <3",
+        "likes": 7,
+        "playlist_art": "assets/img/playlist.png",
+        "song": [
+            {
+                "songId": "1",
+                "song_name": "Charlene",
+                "song_artist": "Anthony Hamilton",
+                "song_duration": "4:06",
+                "song_art": "assets/img/song.png"
+            },
+            {
+                "songId": "2",
+                "song_name": "Nothing Even Matters",
+                "song_artist": "Lauryn Hill, D'Angelo",
+                "song_duration": "5:50",
+                "song_art": "assets/img/song.png"
+            },
+            {
+                "songId": "3",
+                "song_name": "Cupid",
+                "song_artist": "112",
+                "song_duration": "4:12",
+                "song_art": "assets/img/song.png"
+            }
+        ]
+    },
+    {
+        "playlistId": "5",
+        "playlist_name": "country girl ily",
+        "playlist_author": "kowboy ken",
+        "likes": 9,
+        "playlist_art": "assets/img/playlist.png",
+        "song": [
+            {
+                "songId": "1",
+                "song_name": "You Should Probably Leave",
+                "song_artist": "Chris Stapleton",
+                "song_duration": "3:33",
+                "song_art": "assets/img/song.png"
+            },
+            {
+                "songId": "2",
+                "song_name": "Wondering Why",
+                "song_artist": "The Red Clay Strays",
+                "song_duration": "3:52",
+                "song_art": "assets/img/song.png"
+            },
+            {
+                "songId": "3",
+                "song_name": "You Make It Easy",
+                "song_artist": "Jason Aldean",
+                "song_duration": "3:13",
+                "song_art": "assets/img/song.png"
+            }
+        ]
+    },
+    {
+        "playlistId": "6",
+        "playlist_name": "roots",
+        "playlist_author": "kenna ngeh",
+        "likes": 99,
+        "playlist_art": "assets/img/playlist.png",
+        "song": [
+            {
+                "songId": "1",
+                "song_name": "Kirikou",
+                "song_artist": "Longue Longue",
+                "song_duration": "6:41",
+                "song_art": "assets/img/song.png"
+            },
+            {
+                "songId": "2",
+                "song_name": "Karolina",
+                "song_artist": "Awilo Longomba",
+                "song_duration": "4:32",
+                "song_art": "assets/img/song.png"
+            },
+            {
+                "songId": "3",
+                "song_name": "You Must Calculer",
+                "song_artist": "Prince Eyango",
+                "song_duration": "8:02",
+                "song_art": "assets/img/song.png"
+            }
+        ]
+    },
+    {
+        "playlistId": "7",
+        "playlist_name": "wunna world",
+        "playlist_author": "kenny",
+        "likes": 18,
+        "playlist_art": "assets/img/playlist.png",
+        "song": [
+            {
+                "songId": "1",
+                "song_name": "Dropping Jewels",
+                "song_artist": "Young Thug",
+                "song_duration": "3:38",
+                "song_art": "assets/img/song.png"
+            },
+            {
+                "songId": "2",
+                "song_name": "3 SMRS STR8",
+                "song_artist": "LUCKI, Rylo Rodriguez, 42 Dugg",
+                "song_duration": "2:21",
+                "song_art": "assets/img/song.png"
+            },
+            {
+                "songId": "3",
+                "song_name": "200 FOR LUNCH",
+                "song_artist": "GUNNA",
+                "song_duration": "2:29",
+                "song_art": "assets/img/song.png"
+            }
+        ]
+    },
+    {
+        "playlistId": "8",
+        "playlist_name": "tu parle francais",
+        "playlist_author": "kenna nyuga",
+        "likes": 3000,
+        "playlist_art": "assets/img/playlist.png",
+        "song": [
+            {
+                "songId": "1",
+                "song_name": "Ghetto",
+                "song_artist": "Merveille",
+                "song_duration": "2:17",
+                "song_art": "assets/img/song.png"
+            },
+            {
+                "songId": "2",
+                "song_name": "C'est toi(Kk Yo",
+                "song_artist": "Jungeli",
+                "song_duration": "2:05",
+                "song_art": "assets/img/song.png"
+            },
+            {
+                "songId": "3",
+                "song_name": "Ma nana",
+                "song_artist": "DK2fois",
+                "song_duration": "3:17",
+                "song_art": "assets/img/song.png"
+            }
+        ]
+    }
+]

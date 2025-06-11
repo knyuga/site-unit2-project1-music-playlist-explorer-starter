@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+    width : 100%;
 }
 
 header {
@@ -13,6 +14,7 @@ header {
     text-align: start;
     border: #b3b3b3 1px solid;
     border-radius: 3px;
+    width : 100%;
 }
 
 footer {
@@ -24,15 +26,23 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
+    
 }
 
 .playlist-card-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);  /* 4 columns of equal width */
+    /* grid-template-columns: repeat(4, 21%);  4 columns of equal width */
     grid-template-rows: auto; /* rows will adjust based on content */
-    gap: 16px; 
-    padding: 30px;
+    row-gap: 2%; 
+    column-gap: 3%;
+    padding: 1%;
+    width : 100%;
+    box-sizing: border-box; /* ensures padding is included in width */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .playlist-card {
@@ -43,13 +53,22 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
 
+    width : 300px;
+    min-width: 50px; 
+    max-width: 500px;
+    height : 520px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }    
- 
-.playlist-img {
-    width: 375px;
-    height: 175px;
+
+.playlist-card img {
+    width: 100%;
+    height: 65%;
     object-fit: cover;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .playlist-card:hover {
@@ -69,7 +88,6 @@ footer {
     background-color: rgba(0,0,0,0.6);
 
     /* FlexBox */
-    display: flex;
     justify-content: center;
     align-items: center;
 
@@ -90,6 +108,7 @@ footer {
     position: relative;
 }
 
+
 /* Close button */
 .close-button {
     position: absolute;
@@ -99,4 +118,68 @@ footer {
     font-weight: bold;
     color: #333;
     cursor: pointer;
+}
+
+
+.likebutton {
+    cursor: pointer;
+    background: #ffffff;
+    border: none;
+    padding: 5px;
+    font-size: 30px;
+    color: #adadad;
+}
+
+.likebutton.liked {
+    color: red;
+}
+
+/* .likebutton.hover {
+    color: pink
+} */
+
+.modal-header {
+    position: relative;
+    width: 100%;
+    height: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+}
+
+#modal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+    margin: 0;
+}
+
+.modal-title-overlay {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px #000000, -2px -2px 4px #000000;
+}
+
+#modal-creator {
+    margin-top: 10px;
+    margin-bottom: 18px;
+    font-size: 1.2em;
+    color: #000000;
+    font-weight: bold;
+}
+
+#modal-song-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px
 }

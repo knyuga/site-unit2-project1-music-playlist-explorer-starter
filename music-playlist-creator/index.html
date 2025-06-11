@@ -17,94 +17,20 @@
 
     <main> 
         <!-- Your main content here -->
-        <div class="playlist-card-container">
-            <div class="playlist-card">
-                <img class = "playlist-img" src = "assets/img/playlist.png" alt = "Playlist 1 Image">
-                <h2>Playlist Title</h2>
-                <p> Creator Name </p>
-                <button class = "likebutton">♥</button>
-                <ul id="playlist-1"></ul>
-                <!-- <div class="playlist-modal">
-                    <p>More Info:</p>
-                    <p>Genre: </p>
-                    <p>Tracks: </p>
-                    <p>Duration: </p>
-                </div> -->
-            </div>
-            <div class="playlist-card">
-                <img class = "playlist-img" src = "assets/img/playlist.png" alt = "Playlist 1 Image">
-                <h2>Playlist Title</h2>
-                <p> Creator Name </p>
-                <button class = "likebutton">♥</button>
-                <ul id="playlist-2"></ul>
-            </div>
-            <div class="playlist-card">
-                <img class = "playlist-img" src = "assets/img/playlist.png" alt = "Playlist 1 Image">
-                <h2>Playlist Title</h2>
-                <p> Creator Name </p>
-                <button class = "likebutton">♥</button>
-                <ul id="playlist-3"></ul>
-            </div>
-            <div class="playlist-card">                
-                <img class = "playlist-img" src = "assets/img/playlist.png" alt = "Playlist 1 Image">
-                <h2>Playlist Title</h2>
-                <p> Creator Name </p>
-                <button class = "likebutton">♥</button>
-                <ul id="playlist-4"></ul>
-            </div>
-            <div class="playlist-card">
-                <img class = "playlist-img" src = "assets/img/playlist.png" alt = "Playlist 1 Image">
-                <h2>Playlist Title</h2>
-                <p> Creator Name </p>
-                <button class = "likebutton">♥</button>
-                <ul id="playlist-5"></ul>
-            </div>
-            <div class="playlist-card">
-                <img class = "playlist-img" src = "assets/img/playlist.png" alt = "Playlist 1 Image">
-                <h2>Playlist Title</h2>
-                <p> Creator Name </p>
-                <button class = "likebutton">♥</button>
-                <ul id="playlist-6"></ul>
-            </div>
-            <div class="playlist-card">
-                <img class = "playlist-img" src = "assets/img/playlist.png" alt = "Playlist 1 Image">
-                <h2>Playlist Title</h2>
-                <p> Creator Name </p>
-                <button class = "likebutton">♥</button>
-                <ul id="playlist-7"></ul>
-            </div>
-            <div class="playlist-card">
-                <img class = "playlist-img" src = "assets/img/playlist.png" alt = "Playlist 1 Image">
-                <h2>Playlist Title</h2>
-                <p> Creator Name </p>
-                <button class = "likebutton">♥</button>
-                <ul id="playlist-8"></ul>
-            </div>
-
-            <!-- <div class="song-container">
-                <h2>Songs</h2>
-                <ul id="song-list"></ul>
-            </div>
-
-            <div class="controls">
-                <button id="add-playlist">Add Playlist</button>
-                <button id="add-song">Add Song</button>
-            </div> -->
-        </div>
+        <div class="playlist-card-container"></div> 
     </main>
     <div id="playlist-modal" class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
-            <h2 id="modal-title">Playlist Title</h2>
-            <p id="modal-creator">Creator Name</p>
-            <p id="modal-details">Additional details go here...</p>
+            <div class="modal-header">
+                <img id="modal-image" src="" alt="Playlist Image">
+                <h2 id="modal-title" class="modal-title-overlay"></h2>
+            </div>
+            <p id="modal-creator"></p>
+            <p id="modal-details"></p>
+            <div id="modal-song-list"></div>
         </div>
     </div>
-
-
-
-
-    <script src="data/data.js"></script>
     <script src="script.js"></script>
 </body>
 <footer></footer>
