@@ -56,19 +56,25 @@ footer {
     width : 300px;
     min-width: 50px; 
     max-width: 500px;
-    height : 520px;
+    height : 450px;
     margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }    
 
+.playlist-card h2, h3, p {
+    margin: 7px;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+}
+
 .playlist-card img {
     width: 100%;
-    height: 65%;
+    height: 100%;
     object-fit: cover;
     border-radius: 5px;
-    margin-bottom: 10px;
 }
 
 .playlist-card:hover {
@@ -116,7 +122,7 @@ footer {
     right: 20px;
     font-size: 28px;
     font-weight: bold;
-    color: #333;
+    color: #000000;
     cursor: pointer;
 }
 
@@ -181,5 +187,52 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 12px
+    gap: 12px;
+}
+
+.song-image {
+    width: 100px;
+    height: 100px;
+    /* object-fit: cover; */
+    border-radius: 5px;
+    display: block;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.song-info { /* holds the title and artist */
+    flex: 1; /* this takes up space between the other things in the modal song box*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.song-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.song-artist {
+    font-size: 20px;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.modal-song {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.modal-song:hover {
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
 }
