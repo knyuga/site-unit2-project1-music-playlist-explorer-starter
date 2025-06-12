@@ -1,32 +1,39 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Bowlby One SC",'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3M4YXN0bXc3NWk2ZG9ma21peHNqMm45OTd2aXp0aHpvdG43cHNlMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Q99A6dXgEr3shEYNi3/giphy.gif);
     width : 100%;
+    height : 100%;
 }
 
 header {
-    background-color: #dbd9d9;
-    color: rgb(114, 113, 113);
-    padding: 10px ;
-    padding-left: 30px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 20px ;
+    /* padding-left: 10px; */
     text-align: start;
     border: #b3b3b3 1px solid;
     border-radius: 3px;
     width : 100%;
+    font-size: 30px;
+}
+
+header h1 {
+    margin: 0px;
+    padding: 0px;
 }
 
 footer {
-    background-color: #dbd9d9;
+    background-color: #000000;
     color: rgb(114, 113, 113);
-    border: #b3b3b3 1px solid;
-    border-radius: 3px;
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
-    padding: 20px;
+    width: 100%; 
+    height: 15px;
+    text-align: center;
+    font-size: 10px;
     
 }
 
@@ -46,17 +53,18 @@ footer {
 }
 
 .playlist-card {
-    background-color: #ffffff;
-    border: 1px solid #b3b3b3;
+    background-color: #000000;
+    border: 1px solid #ffd900;
     border-radius: 5px;
-    padding: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(255, 247, 0, 0.7);
     transition: box-shadow 0.3s ease;
+    color: white;
 
     width : 300px;
     min-width: 50px; 
     max-width: 500px;
-    height : 450px;
+    height : 490px;
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -71,14 +79,31 @@ footer {
 }
 
 .playlist-card img {
-    width: 100%;
-    height: 100%;
+    width: 270px;
+    height: 270px;
     object-fit: cover;
     border-radius: 5px;
 }
 
 .playlist-card:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 15px rgba(255, 204, 0, 0.9);
+}
+
+#delete-button {
+    font-size: 15px;
+    margin: 10px;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 5px;
+    margin-left: auto;
+
+    text-shadow: 0 2px 4px rgb(255, 238, 0);
+    transition: box-shadow 0.3s ease;
+}
+
+#delete-button:hover {
+    box-shadow: 0 5px 5px rgba(255, 217, 0, 0.9);
 }
 
 .modal {
@@ -101,7 +126,7 @@ footer {
 
 /* Modal content box */
 .modal-content {
-    background-color: #fff;
+    background-color: #ffffff;
     margin: 10% auto;
     padding: 20px;
     border-radius: 8px;
@@ -114,8 +139,6 @@ footer {
     position: relative;
 }
 
-
-/* Close button */
 .close-button {
     position: absolute;
     top: 12px;
@@ -126,23 +149,18 @@ footer {
     cursor: pointer;
 }
 
-
 .likebutton {
     cursor: pointer;
-    background: #ffffff;
+    background: #000000;
     border: none;
     padding: 5px;
-    font-size: 30px;
+    font-size: 40px;
     color: #adadad;
 }
 
 .likebutton.liked {
     color: red;
 }
-
-/* .likebutton.hover {
-    color: pink
-} */
 
 .modal-header {
     position: relative;
@@ -223,7 +241,9 @@ footer {
 }
 
 .modal-song {
-    border: 1px solid black;
+    background-color: #000000;
+    border: 1px solid rgb(255, 191, 0);
+    color: white;
     display: flex;
     align-items: center;
     margin: 15px;
@@ -234,5 +254,69 @@ footer {
 }
 
 .modal-song:hover {
-    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 30px rgba(255, 221, 0, 0.5);
+}
+
+#modal-image {
+    border: 4px solid #000000; /* or any color/width you like */
+    border-radius: 10px;        /* keep or adjust for rounded corners */
+}
+
+
+#modal-shuffle{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+#modal-shuffle:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+nav {
+    color: black;
+    padding-right: 100px ;
+    margin: 0px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+nav a {
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+    transition: box-shadow 0.3s ease;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-shadow: 0 12px 24px rgba(255, 221, 0, 0.5);
+}
+
+nav a.active{
+    color: #ffd900;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+
+    transition: box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+nav a.active:hover {
+    text-shadow: 0 12px 24px rgba(255, 247, 0, 0.9);
+}
+
+.bowlby-one-sc-regular {
+  font-family: "Bowlby One SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }

@@ -6,13 +6,22 @@
     
     <title>Music Playlist Explorer</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+
+    
 </head>
+
 <body>
     <header>
         <!-- Your header content here -->
         <h1>Music Playlist Explorer</h1>
+        <nav>
+            <a href="index.html" class="active">Home </a>
+            <a href="featured.html">Featured </a>
+        </nav>
     </header>
 
     <main> 
@@ -27,8 +36,8 @@
                 <h2 id="modal-title" class="modal-title-overlay"></h2>
             </div>
             <p id="modal-creator"></p>
-            <button id="shuffle-button" class="shuffle-button">Shuffle</button>
-            <p id="modal-details"></p> <!-- song content holder-->
+            <button id="modal-shuffle" class="modal-shuffle">🔀</button>
+            <p id="modal-details"></p> 
         </div>
     </div>
     <script src="script.js"></script>

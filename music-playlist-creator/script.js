@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById("playlist-modal");
     const modalTitle = document.getElementById("modal-title");
@@ -6,17 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalDetails = document.getElementById("modal-details"); // holds the song list
     const modalShuffle = document.getElementById("modal-shuffle");
     const modalArt = document.getElementById("modal-image"); 
-    const closeBtn = document.querySelector(".close-button");
     const playlistCardContainer = document.querySelector(".playlist-card-container");
     
     let songList = []; // reset songList for each new playlist
-
-    
-
-    // // Close modal on X click
-    // closeBtn.addEventListener("click", () => {
-    //     modal.style.display = "none";
-    // });
 
     // Close modal when clicking outside modal content
     window.addEventListener("click", (e) => {
@@ -25,21 +16,27 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    modalShuffle.addEventListener("click", () => {
-        if (songList.length > 0) {
-            modalDetails.innerHTML = ""; 
-            randomizeSongOrder(songList);
-        }
-    });
-
-    function randomizeSongOrder(songs) {
-        while(songList.length > 0) {
-            const randomIndex = Math.floor(Math.random() * songList.length);
-            modalDetails.appendChild(songList[randomIndex]);
-            songList.splice(randomIndex, 1); // pops at the index specfied and removes it from the array
-        }
+    if (modalShuffle){
+        modalShuffle.addEventListener("click", (e) => {
+            if (songList.length > 0) {
+                songList = randomizeSongOrder(songList);
+            }
+        });
     }
 
+    function randomizeSongOrder(songs) {
+        modalDetails.innerHTML = "";
+        const shuffled = [];
+        let saveSongs = songs.slice(); // makes an actual copy, before it was a reference
+        while(saveSongs.length > 0) {
+            const randomIndex = Math.floor(Math.random() * saveSongs.length);
+            modalDetails.appendChild(saveSongs[randomIndex]);
+            shuffled.push(saveSongs[randomIndex]);
+            saveSongs.splice(randomIndex, 1); // pops at the index specfied and removes it from the array
+        }
+
+        return shuffled;
+    }
 
     // 1) Load playlists via fetch().then() chaining
     fetch("data/data.json")
@@ -58,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 2) Create each playlist card
     const addPlaylistTile = (pl) => {
+        console.log("trying to add playlist tile")
         const tile = createPlaylistTile(pl);
         playlistCardContainer.appendChild(tile);
     };
@@ -67,6 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const card = document.createElement("div");
         card.className = "playlist-card";
         card.innerHTML = `
+            <button id="delete-button" class="delete-button">🗑️</button>
             <img src="${pl.playlist_art}" alt="${pl.playlist_name}">
             <h3>${pl.playlist_name}</h3>
             <p>by: ${pl.playlist_author}</p>
@@ -84,9 +83,8 @@ document.addEventListener("DOMContentLoaded", () => {
             modalArt.alt = `${pl.playlist_name}'s Image`;
             songList = [];
 
-            
             pl.song.forEach(song => {
-                const songContainer = document.createElement("div");
+                const songContainer = document.createElement("div"); // this holds all the songs and i put this into my songList array
                 songContainer.classList.add("modal-song");
 
                 const songImage = document.createElement("img");
@@ -116,34 +114,35 @@ document.addEventListener("DOMContentLoaded", () => {
                 songContainer.appendChild(songInfo);
                 songContainer.appendChild(songDuration);
 
-                songList.push(songContainer);
-
-                // modalDetails.appendChild(songContainer);
+                songList.push(songContainer); // adds the toy to the toy box
+                modalDetails.appendChild(songContainer); // puts the toy on the shelf so people can see it
             });
             modal.style.display = "block";
         });
 
-
+        const deleting = card.querySelector('.delete-button');
+        deleting.addEventListener('click', (e) => {
+            e.stopPropagation();
+            card.remove();
+        });
 
         const heart = card.querySelector('.likebutton');
         const count = card.querySelector('.like-count');
         heart.addEventListener('click', (e) => {
-        e.stopPropagation(); 
+            e.stopPropagation(); 
 
-        let n = parseInt(count.textContent, 10);
-        if (heart.classList.contains('liked')) {
-            heart.classList.remove('liked');
-            count.textContent = n - 1;
-        } else {
-            heart.classList.add('liked');
-            count.textContent = n + 1;
-        }
-    });
+            let n = parseInt(count.textContent, 10);
+            if (heart.classList.contains('liked')) {
+                heart.classList.remove('liked');
+                count.textContent = n - 1;
+            } else {
+                heart.classList.add('liked');
+                count.textContent = n + 1;
+            }
+        });
 
         return card;
       
     }
-
-
 
 });
