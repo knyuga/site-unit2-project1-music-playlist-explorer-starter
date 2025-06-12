@@ -1,5 +1,3 @@
-📝 `NOTE` Use this template to initialize the contents of a README.md file for your application. As you work on your assignment over the course of the week, update the required or stretch features lists to indicate which features you have completed by changing `[ ]` to `[x]`. (🚫 Remove this paragraph before submitting your assignment.)
-
 ## Unit Assignment: Music Playlist Explorer
 
 Submitted by: Kenna Nyuga-Galega
@@ -141,18 +139,20 @@ https://www.loom.com/share/800cdd5a8f264c948cb605320ac1fc3a?sid=806d8eaa-22de-4a
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
+Yes, they did. I liked tomato timer becuase I was able to see the stages and completion aspect that can result between utilization of CSS, JavaScript, and HTML. I did not feel prepared to use javascript to import JSON file at all. The walk through that Devarsh did really helped, but I was not able to really work on any of the labs because I prioritzed the project. I just glanced at them to get familiar with topics.
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
-  
-Add your response here
+
+If I had more time, I would add more animation. I relaly wanted to add some slide in animation for the cards and modals. I also wanted to add a shake animation on the shuffle button. I also love music in general, so I would have like to add the Spotify preview so that music would play on each card when pressed. I also wanted to do the sort and add playlist stretch features when I first started, but I ran out of time.
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+My project demo went really well. I was more confident in my presentation and was a little bit quicker than before. Next time, I am going to make sure my code is commented and organized well so I can locate and explain exact lines of codes better.
 
 ### Open-source libraries used
 
-- Add any links to open-source libraries used in your project.
+- https://www.w3schools.com/
+- https://chatgpt.com/
 
 ### Shout out
 

@@ -119,6 +119,8 @@ main {
     text-align: center;
     font-size: 30px;
     color: white;
+    align-items: center;
+    flex-direction: column;
 }
 
 .large-feature img {
@@ -129,6 +131,7 @@ main {
     display: block;
     margin-bottom: 16px;
     box-shadow: 0 2px 8px rgba(255, 255, 255, 0.4);
+    align-items: center;
 }
 
 .large-feature img:hover {
